@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+  <!-- fonts -->
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <!-- animation -->
+  <link rel="stylesheet" href="assets/vendor/wow/animate.min.css">
+  <!-- boostrap -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+  <section class="home">
+    <div class="container">
+      <div class="row p-5 home-row">
+        <div class="col-lg-6 p-5 card-item">
+          <div class="home-card animate__animated animate__flipInY">
+            <img src="assets/images/bg-card-front.png" alt="">
+            <div class="overlay ">
+              <img src="assets/images/card-logo.svg" alt="not found" class="w-25">
+              <div class="text mt-5 m-auto">
+                <span class="card-number">
+                
+              </span>
+              </div>
+              <div class="row ">
+                <div class="col-lg-6 mt-3">
+                  <h5 class="cardholder"></h5>
+                </div>
+                <div class="col-lg-6 mt-3 date-parent">
+                  <span class="date"><span class="month"></span><span class="year"></span></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 p-5 col-md-12" id="confirm">
+          <div class="confirm-item text-center p-4">
+            <img src="assets/images/icon-complete.svg" class="w-25" alt="">
+            <div class="item-text mt-4">
+              <h3>thank you</h3>
+              <p>we have added your card details</p>
+            </div>
+          </div>
+          <form action="" class="p-4 form animate__animated animate__zoomInDown">
+
+            <div class="form-text">
+              <label for="">Cardholder name</label>
+              <input type="text" class="form-control  mt-3 cardName" required placeholder="e.g.jane Appleased">
+            </div>
+            <div class="form-text mt-4">
+              <label for="">CARD NUMBER</label>
+              <input type="number" class="form-control mt-3" id="cardNumber" required placeholder="e.g.1234 5678 9100 0000">
+            </div>
+            <div class="form-text mt-4">
+              <div class="row">
+                <div class="day  w-25 ">
+                  <label for="">EXP. date</label>
+                  <input type="datetime" class="form-control mt-3" required placeholder="MM">
+                </div>
+                <div class="year  w-25">
+                  <label for="" class="">(MM/YY)</label>
+                  <input type="datetime" class="form-control  mt-3" required placeholder="YY">
+                </div>
+                <div class="year  w-50">
+                  <label for="" class="">CVC</label>
+                  <input type="datetime" class="form-control  mt-3" required placeholder="e.g.123">
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="confirm-btn p-4 text-center animate__animated animate__zoomInDown">
+            <button class="btn" id="btn">confirm</button>
+           </div>
+        
+        </div>
+        <div class="col-lg-6 p-5 ">
+          <div class="home-card-back animate__animated animate__flipInX">
+            <img src="assets/images/bg-card-back.png" alt="">
+            <div class="cvc">
+              <span class="cvcnumber"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/Abdulrahman-Nasser" target="_blank">Abdulrahman Nasser gad</a>.
+      </div>
+    </footer>
+  </section>
+
+
+  <!-- jQuery JS -->
+  <script src="assets/vendor/jQuery/jquery-3.6.1.min.js"></script>
+  <!-- bootstrap JS -->
+  <script src="assets/vendor/bootstrap/bootstrap.js"></script>
+  <!-- animation JS -->
+  <script src="assets/vendor/wow/wow.min.js"></script>
+  <!-- main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

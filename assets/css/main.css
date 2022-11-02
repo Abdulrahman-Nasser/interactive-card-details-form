@@ -1,0 +1,145 @@
+body{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.home-card-back{
+    position: absolute;
+    bottom: 20%;
+    right:48%;
+    overflow: hidden;
+    visibility: hidden;
+    z-index: -111 !;
+}
+img{
+    width: 100%;
+}
+::placeholder{
+    color: hsl(270, 3%, 87%) !important;
+}
+label{
+    text-transform: uppercase;
+}
+/*/////////////*/
+.home {
+  background-image: url(../images/bg-main-desktop.png);
+  background-size: 37%;
+  /* height: 100vh; */
+  background-repeat: no-repeat;
+}
+.home-card{
+    position: relative;
+    top: -40px;
+}
+
+.overlay{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    width: 100%;
+}
+.text{
+    text-align: center;
+    position: relative;
+    left: -20px;
+    top: -20px;
+    color: white;
+}
+.text .card-number{
+    font-size: 35px;
+}
+.card-name{
+    font-size: 25px;
+    margin-top: 40px;
+    padding: 30px 0;
+}
+.date-parent{
+    text-align: right;
+    position: relative;
+    right: 40px;
+}
+.btn{
+    background-color:  hsl(278, 68%, 11%);
+    padding: 10px 0;
+    color: white;
+    width: 100%;
+}
+.btn:hover{
+    color: white;
+}
+
+.cvc{
+    color: white !important;
+    position: relative;
+    top: -144px;
+    left: 81%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.confirm-item {
+    display: none;
+}
+.confirm-item  h3{
+    text-transform: uppercase;
+}
+.confirm-item p{
+    color: hsl(270, 3%, 87%);
+}
+.form{
+    z-index: 111 !important;
+}
+/*//////////////////////////////////////*/
+@media screen and (max-width:600px) {
+    .home{
+        background-size: cover;
+        height: 30vh;
+    }
+    .home-card{
+        top: 0;
+    }
+    .card-item{
+        padding: 38px !important;
+        position: relative;
+        top: 95px;
+        left: -26px;
+        z-index: 111;
+        margin-bottom: 31px;
+    }
+    .text .card-number{
+        font-size: 20px;
+    }
+    .date-parent{
+        top: -28px ;
+    }
+    .mt-3{
+        margin-top: 0 !important;
+    }
+    .home-card-back{
+        position: absolute;
+        bottom: 0;
+        right: 6%;
+        top: 35px;
+        left: 19%;
+    }
+    #confirm{
+        padding: 1rem !important;
+    }
+    .form{
+        padding: 60px 0 !important;
+    }
+    .home-row{
+        padding: .5rem !important;
+    }
+    .cvc{
+        top: -101px;
+    left: 79%;
+    }
+}
